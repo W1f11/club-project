@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ga+Maamli&family=Syne:wght@400..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'DM Sans';
+}body{
+    background-color: #1A1A40;
+}p{
+    color: white;
+}.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 80px 12%;
+    margin-top: 50px;
+}.first{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}.under{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}.title{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:#B3B3CC ;
+}.first .under .h3{
+    font-size: 3.8em;
+    color: #fff;
+    line-height: 4.5em;
+}.first .under p{
+    width: 90%;
+    color: #fff;
+    margin: 10px 0;
+}.second{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}.second .tirer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}.second .tirer .tirer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 32px 0px;
+    border-bottom: 0.2px solid white;
+    transition: 1s;
+}.second .tirer .tirer1 h2{
+    font-size:35px ;
+    letter-spacing: 0.6px;
+    color: #fff;
+    font-weight: 500;
+
+}.ActiveHeading{
+    background: linear-gradient(90deg,#B3B3CC 0%,#5D3FD3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}.second .tirer .tirer1 i{
+    font-size: 2.3rem;
+    color: white;
+}.service{
+    display: flex;
+    flex-direction:column ;
+    gap: 10px;
+    padding: 10px 0;
+    transition: .6s;
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+    max-height: 400px; 
+    overflow-y: auto;
+    
+
+}
+
+
+
+
+.ActiveDescrption{
+    height: 230px;
+    opacity: 1;
+    transition: 0.6s ;
+    z-index: 1;
+    animation: show 0.6 linear forwards;
+}@keyframes show{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}.service p{
+     font-size: 18px;
+     font-weight: 500;
+
+}.service ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px ;
+}.service ul li{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+@media(max-width:1500px){
+    .about-us{
+        margin-top: 0;
+    }
+}@media(max-width:1400px){
+    .about-us{
+        margin-top: 0;
+        padding: 30px 12%;
+    }
+}@media(max-width:1100px){
+    .first{
+        flex-direction: column;
+    }.first .under{
+        width: 100%;
+    }.second{
+        width: 100%;
+        margin-top: 50px;
+    }
+}@media(max-width:78px){
+    .first .under h3{
+        font-size: 3.6rem;
+        line-height: 4.3rem;
+
+    }
+}.image {
+    width: 100%; 
+    height: 300px; 
+    background-image: url('club-image.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    border: 2px solid #B3B3CC;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    color: #B3B3CC;
+    font-size: 3em;
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 3px #B3B3CC;
+    margin-top: 50px;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+	background: #1A1A40;
+}
+
+nav{
+	display: flex;
+	padding: 2% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .fa{
+	display: none;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+	
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 6px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #B3B3CC;
+	display: block;
+	margin: auto;
+	transition: 0.5;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+header img{
+	border-radius: 60%;
+}
+
+

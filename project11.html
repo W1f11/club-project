@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECLYPSE ASTRONOMIE</title>
+<link rel="stylesheet" href="newproject.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- header -->
+<header>
+<nav>
+<div class="logo">
+<a href="projet.html"><img src="images/logo.png" width="15%" align="left"></img></a>
+</div>
+<div class="nav-links" id="navLinks">
+<i class="fa fa-times" onclick="hideMenu()"></i>
+<ul>
+<li><a href="">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="membership.html">MEMBERSHIP</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</header>
+<!-- slider -->
+<div class="slider">
+<!-- list Items -->
+<div class="list">
+<div class="item active">
+<img src="images/planet.jpg">
+<div class="content">
+<p>ASTRONOMY CLUB</p>
+<h2>Introduction</h2>
+<p>
+ Nous sommes le 1er club d'astronomie Basé à la Faculté des sciences Ben Msik.
+Ce club Eclipse Astronomie est dédié au partage de l'astronomie en général et l'astronomie amateur plus particulièrement.
+Le club d'astronomie à pour mission de promouvoir la culture scientifique en matière d'astronomie auprès des étudiants,
+de favoriser leur ouverture sur l'univers et de les sensibiliser à l'importance de la recherche scientifique.
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/spaceship.jpg">
+<div class="content">
+<p>ASTRONOMY CLUB</p>
+<h2>What is Astronomy?</h2>
+<p>
+Astronomy is the study of everything in the universe beyond Earth’s atmosphere.<br/>
+ That includes objects we can see with our naked eyes,like the Sun,the Moon,<br/>
+ the planets, and the stars . It also includes objects we can only see with telescopes or other instruments,
+ like faraway galaxies and tiny particles.
+ And it even includes questions about things we can't see at all, like dark matter and dark energy .
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/numerology.jpg">
+<div class="content">
+<p>ASTRONOMY CLUB</p>
+<h2>Events</h2>
+<p>On est déjà un nouveau club à la faculté et pour vous mettre à jour<br/> on va partager avec vous nos événements 
+en espérant plus d'événements<br/> avec des experts et planifier
+ des voyages d'observation des étoiles dans la région de l'Atlas.</p>
+<div class="row">
+<div class="even-col">
+<img src="images/even1.png" width="120%">
+<div class="layer">
+</div>
+</div>
+<div class="even-col">
+<img src="images/even3.jpeg" width="111%">
+<div class="layer">
+</div>
+</div>
+<div class="even-col">
+<img src="images/even2.jpeg" width="120%">
+<div class="layer">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- button arrows -->
+<div class="arrows">
+<button id="prev"><</button>
+<button id="next">></button>
+</div>
+<!-- thumbnail -->
+<div class="thumbnail">
+<div class="item active">
+<img src="images/planet.jpg">
+<div class="content">
+ Club intro
+</div>
+</div>
+<div class="item">
+<img src="images/spaceship.jpg">
+<div class="content">
+astronomy definition
+</div>
+</div>
+<div class="item">
+<img src="images/numerology.jpg">
+<div class="content">
+Club events
+</div>
+</div>
+</div>
+</div>
+<!----Footer----
+<section class="footer">
+<h4>About us</h4>
+<p>Ce club Eclipse Astronomie est dédié au partage de l'astronomie en général et l'astronomie amateur plus particulièrement.<br/>
+Basé à la Faculté des sciences Ben M'sik FSBM.</p>
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-linkedin"></i>
+</div>
+<p>made with love <i class="fa fa-heart-o"></i> by ELHASSANI MARIAM</p>
+</section>
+<!----javascript---->
+<script src="app.js">
+</script>
+<!----javascript for Toggle menu---->
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+ navLinks.style.right= "0";
+}
+function hideMenu(){
+ navLinks.style.right= "-200px";
+}
+</script>
+</body>
+</html>
